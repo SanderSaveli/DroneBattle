@@ -28,6 +28,7 @@ namespace Sander.DroneBattle
         private void OnDisable()
         {
             _settings.OnUpdate -= UpdateSettings;
+            _trailRenderer.Clear();
         }
 
         private void Update()

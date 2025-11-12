@@ -30,7 +30,7 @@ namespace Sander.DroneBattle
         {
             _dronePerFraction.onValueChanged.AddListener(SetDroneCount);
             _droneSpeed.onValueChanged.AddListener(SetDroneSpeed);
-            _resourceGeneration.onSubmit.AddListener(SetResourceGeneration);
+            _resourceGeneration.onDeselect.AddListener(SetResourceGeneration);
             _dronePath.onValueChanged.AddListener(SetTrace);
             _simulationSpeed.onValueChanged.AddListener(SetSimulationSpeed);
 
@@ -41,7 +41,7 @@ namespace Sander.DroneBattle
         {
             _dronePerFraction.onValueChanged.RemoveListener(SetDroneCount);
             _droneSpeed.onValueChanged.RemoveListener(SetDroneSpeed);
-            _resourceGeneration.onSubmit.RemoveListener(SetResourceGeneration);
+            _resourceGeneration.onDeselect.RemoveListener(SetResourceGeneration);
             _dronePath.onValueChanged.RemoveListener(SetTrace);
             _simulationSpeed.onValueChanged.RemoveListener(SetSimulationSpeed);
         }
@@ -58,7 +58,7 @@ namespace Sander.DroneBattle
 
         private void SetResourceGeneration(string time)
         {
-            if (int.TryParse(time, out int result))
+            if (float.TryParse(time, out float result))
                 _resourceSettings.SpawnTime = result;
         }
 
