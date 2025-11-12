@@ -30,3 +30,6 @@ AI дрона построен на [FSM](https://github.com/SanderSaveli/DroneB
 * [NavMeshPlus](https://github.com/h8man/NavMeshPlus) - навигация
 * DoTween - анимации
 * Zenject - внедрения зависимостей
+
+# Видео демонстрация
+[Видео](https://drive.google.com/file/d/1e7lUdVHGJRQm-hAl8hXcitlEnFgMvUTM/view?usp=drive_link)
